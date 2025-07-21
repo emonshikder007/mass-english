@@ -1,0 +1,220 @@
+
+
+ .review {
+
+    
+    min-height: 130vh;
+
+    background: #0c0c0c;
+
+    position: relative;
+
+    font-family: 'outfit', sans-serif;
+
+ }
+
+ .p {
+
+   font-size: 19px;
+
+   color: #d3d3d3;
+
+   font-family: 'outfit', sans-serif;
+
+   margin-top: 20px;
+
+   letter-spacing: 1px;
+
+   display: flex;
+
+   justify-content: center;
+
+   text-align: center;
+
+ }
+
+
+ .reviewCardContainer {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  margin-top: 70px;
+
+  justify-content: center;
+
+ }
+
+
+ .reviewCard-1 {
+
+  height: 600px;
+
+  width: 420px;
+
+  background: rgba( 255, 255, 255, .05 );
+
+  border: 0.5px solid rgba( 255, 255, 255, 0.2 );
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  flex-direction: row;
+
+  border-radius: 10px;
+
+  margin-right: 30px;
+
+  overflow-y: hidden;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+
+ }
+
+
+ .reviewCard-2 {
+
+  height: 550px;
+
+  width: 420px;
+
+  background: rgba( 255, 255, 255, .05 );
+
+  border: 0.5px solid rgba( 255, 255, 255, 0.2 );
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  flex-direction: row;
+
+  border-radius: 10px;
+
+  margin-left: 40px;
+
+  overflow-y: hidden;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+
+ }
+
+
+
+ .reviewCard-3 {
+
+  height: 500px;
+
+  width: 420px;
+
+  background: rgba( 255, 255, 255, .05 );
+
+  border: 0.5px solid rgba( 255, 255, 255, 0.2 );
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  flex-direction: row;
+
+  border-radius: 10px;
+
+  margin-left: 60px;
+
+  overflow-y: hidden;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+
+ }
+
+ .reviewCard-1:hover,
+ .reviewCard-2:hover,
+ .reviewCard-3:hover {
+
+  transform: scale(0.99);
+
+ }
+
+ .student_img {
+
+  width: 50px;
+
+  height: 50px;
+
+  pointer-events: none;
+
+ }
+
+ .star {
+
+  width: 180px;
+
+  height: 40px;
+
+  pointer-events: none;
+
+ }
+
+
+ .student-i {
+
+  display: flex;
+
+  margin-top: 20px;
+
+  margin-left: 15px;
+
+ }
+
+ .nn {
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 120px;
+
+ }
+
+ .studentName {
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  color: #008be1;
+
+  font-family: 'outfit', sans-serif;
+
+  margin-left: 8px;
+
+  margin-top: 5px;
+
+ }
+
+
+ .reviewTxt {
+
+  margin-top: -6rem;
+
+  font-size: 22px;
+
+  color: #d2d2d2dc;
+
+  padding: 20px;
+
+  line-height: 30px;
+
+  letter-spacing: 0.5px;
+
+ }

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mass-english.vercel.app/sitemap.xml

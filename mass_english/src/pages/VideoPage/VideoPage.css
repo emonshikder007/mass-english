@@ -1,0 +1,16 @@
+.video-page {
+
+   background: #000;
+
+   height: 100vh;
+
+}
+
+
+ .video-list {
+
+    display: flex;
+
+    gap: 0px;
+
+ }
