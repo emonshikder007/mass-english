@@ -75,19 +75,15 @@ const UploadVideo = () => {
           required
         />
 
-        <select
+        <input
+          type="text"
           name="category"
           value={form.category}
           onChange={handleChange}
+          placeholder="Enter category name"
           style={inputStyle}
           required
-        >
-          <option value="">-- Select Category --</option>
-          <option value="preposition">Preposition</option>
-          <option value="article">Article</option>
-          <option value="tense">Tense</option>
-          <option value="others">Others</option>
-        </select>
+        />
 
         <input
           type="file"
