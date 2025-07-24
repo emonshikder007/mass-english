@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
+import "./AuthModel.css";
 
 const AuthModal = ({ onClose }) => {
   const [isLogin, setIsLogin] = useState(true);
@@ -30,7 +31,7 @@ const AuthModal = ({ onClose }) => {
 
   return (
     <div className="modal">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="auth-form">
         <h2>{isLogin ? "Login" : "Register"}</h2>
         {!isLogin && (
           <input
@@ -63,7 +64,7 @@ const AuthModal = ({ onClose }) => {
             : "Already a user? Login"}
         </p>
       </form>
-      <button onClick={onClose}>❌ Close</button>
+      <button onClick={onClose} className="cls">❌</button>
     </div>
   );
 };
