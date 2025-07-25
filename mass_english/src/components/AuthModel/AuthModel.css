@@ -1,74 +1,141 @@
-/* src/components/AuthModel/AuthModel.css */
 
 .modal {
+
   position: fixed;
+
   top: 0;
+
   left: 0;
+
   width: 100vw;
+
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6); /* Background dark */
-  backdrop-filter: blur(5px); /* Optional blur effect */
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  backdrop-filter: blur(5px);
+
   -webkit-backdrop-filter: blur(5px);
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   z-index: 9999;
+
 }
 
 .modal form {
-  background-color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.2);
+
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+
   padding: 2rem;
-  border-radius: 10px;
+
+  border-radius: 14px;
+
   width: 90%;
-  max-width: 400px;
+  
+  max-width: 450px;
+
+
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+  
+  align-items: center;
+
+  flex-direction: column;
+
 }
 
-.modal form h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
+
+
 
 .modal form input {
+  
   width: 100%;
+
+  height: 18%;
+
   padding: 10px;
+
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
+
+  background: rgba( 255, 255, 255, .15 );
+
+  border: .5px solid rgba( 255, 255, 255, 0.2 );
+
   border-radius: 6px;
+
+  font-family: 'outfit', sans-serif;
+
+  outline: none;
+
+  font-size: 18px;
+
+}
+
+
+.modal form input::placeholder {
+
+  color: rgba(255, 255, 255, 0.6);
+
 }
 
 .modal form button[type="submit"] {
+
   width: 100%;
+
   padding: 10px;
-  background: #111;
+
+  
+  background: rgba( 255, 255, 255, .3 );
+
+  border: .5px solid rgba( 255, 255, 255, 0.3 );
+
   color: white;
-  border: none;
+
   border-radius: 6px;
+
   cursor: pointer;
+
   font-weight: bold;
-  transition: background 0.3s;
+
+  font-family: 'outfit', sans-serif;
+
+  transition: 0.3s ease;
+
 }
 
 .modal form button[type="submit"]:hover {
-  background: #222;
+
+  transform: scale(0.98);
+
 }
 
-.modal form p {
-  text-align: center;
-  cursor: pointer;
-  color: #007bff;
-  margin-top: 10px;
-}
 
 .modal button {
+
   top: 12px;
+
   right: 12px;
+
   background: transparent;
+
   border: none;
+
   font-size: 18px;
+
   cursor: pointer;
+
   color: #333;
+  
 }
 
 .cls {
@@ -76,3 +143,33 @@
     transform: translate(520px, -310px);
 
 }
+
+.xq {
+
+  font-family: 'outfit', sans-serif;
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+
+  color: rgba( 255, 255, 255, .7 );
+
+  margin-top: 20px;
+
+}
+
+.h-l {
+
+  font-family: 'outfit', sans-serif;
+
+  margin-bottom: 28px;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  color: #fff;
+
+  letter-spacing: 1px;
+}
+

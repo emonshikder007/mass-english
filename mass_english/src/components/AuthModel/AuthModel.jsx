@@ -32,7 +32,7 @@ const AuthModal = ({ onClose }) => {
   return (
     <div className="modal">
       <form onSubmit={handleSubmit} className="auth-form">
-        <h2>{isLogin ? "Login" : "Register"}</h2>
+        <h2 className="h-l">{isLogin ? "Login" : "Register"}</h2>
         {!isLogin && (
           <input
             type="text"
@@ -58,13 +58,41 @@ const AuthModal = ({ onClose }) => {
         />
         <button type="submit">{isLogin ? "Login" : "Register"}</button>
 
-        <p onClick={() => setIsLogin(!isLogin)}>
-          {isLogin
-            ? "Don't have an account? Register"
-            : "Already a user? Login"}
+        <p className="xq">
+          {isLogin ? (
+            <>
+              Don't have an account?{" "}
+              <span
+                style={{
+                  color: "blue",
+                  cursor: "pointer",
+                  textDecoration: "underline",
+                }}
+                onClick={() => setIsLogin(!isLogin)}
+              >
+                Register
+              </span>
+            </>
+          ) : (
+            <>
+              Already a user?{" "}
+              <span
+                style={{
+                  color: "blue",
+                  cursor: "pointer",
+                  textDecoration: "underline",
+                }}
+                onClick={() => setIsLogin(!isLogin)}
+              >
+                Login
+              </span>
+            </>
+          )}
         </p>
       </form>
-      <button onClick={onClose} className="cls">❌</button>
+      <button onClick={onClose} className="cls">
+        ❌
+      </button>
     </div>
   );
 };
