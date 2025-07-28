@@ -7,7 +7,7 @@ const Videos = () => {
 
   const fetchVideos = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/admin/videos", {
+      const res = await axios.get("https://mass-english-backend.onrender.com/api/admin/videos", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("adminToken"),
         },
@@ -25,7 +25,7 @@ const Videos = () => {
     if (!confirm) return;
 
     try {
-      const res = await axios.delete(`http://localhost:5000/api/admin/video/${id}`, {
+      const res = await axios.delete(`https://mass-english-backend.onrender.com/admin/video/${id}`, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("adminToken"),
         },

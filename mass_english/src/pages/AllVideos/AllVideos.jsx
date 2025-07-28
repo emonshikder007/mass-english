@@ -11,7 +11,7 @@ const AllVideos = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/admin/videos").then((res) => {
+    axios.get("https://mass-english-backend.onrender.com/api/admin/videos").then((res) => {
       const data = res.data;
       if (data.success) {
         const uniqueCategories = [

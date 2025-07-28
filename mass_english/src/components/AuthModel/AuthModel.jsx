@@ -12,8 +12,8 @@ const AuthModal = ({ onClose }) => {
     e.preventDefault();
 
     const endpoint = isLogin
-      ? "http://localhost:5000/api/user/login"
-      : "http://localhost:5000/api/user/register";
+      ? "https://mass-english-backend.onrender.com//api/user/login"
+      : "https://mass-english-backend.onrender.com//api/user/register";
 
     try {
       const res = await axios.post(endpoint, form);

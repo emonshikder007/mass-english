@@ -16,7 +16,7 @@ const VideoCard = ({ video }) => {
   const handleLike = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/video/like/${video._id}`,
+        `https://mass-english-backend.onrender.com/api/video/like/${video._id}`,
         {},
         {
           headers: {
@@ -34,7 +34,7 @@ const VideoCard = ({ video }) => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/video/comment/${video._id}`,
+        `https://mass-english-backend.onrender.com/api/video/comment/${video._id}`,
         {
           text: commentText,
         },

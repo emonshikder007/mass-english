@@ -8,7 +8,7 @@ const VideoPage = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/admin/videos")
+    fetch("https://mass-english-backend.onrender.com/api/admin/videos")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {

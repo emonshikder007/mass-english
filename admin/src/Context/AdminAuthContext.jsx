@@ -28,7 +28,7 @@ const AdminAuthProvider = ({ children }) => {
   // 🔐 Login
   const login = async (email, password) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/admin/login", {
+      const res = await axios.post("https://mass-english-backend.onrender.com/api/admin/login", {
         email,
         password,
       });
