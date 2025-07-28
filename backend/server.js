@@ -20,7 +20,7 @@ mongoose
   .catch((err) => console.log("DB Error:", err));
 
 const corsOptions = {
-  origin: ["http://localhost:1011", "https://your-frontend-domain.com"],
+  origin: ["https://mass-english.onrender.com/", "https://your-frontend-domain.com"],
   credentials: true,
 };
 
