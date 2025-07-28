@@ -22,12 +22,12 @@ const AllVideos = () => {
     });
   }, []);
 
-  useEffect(() => {
-    if (!auth.isLoggedIn) {
-      toast.error("Please login to view videos");
-      navigate("/");
-    }
-  }, [auth]);
+useEffect(() => {
+  if (!auth.loading && !auth.isLoggedIn) {
+    toast.error("Please login to view videos");
+    navigate("/");
+  }
+}, [auth]);
 
 
   return (

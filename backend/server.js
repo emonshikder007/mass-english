@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import 'dotenv/config';
+import "dotenv/config";
 
 // Routes
 import userRoutes from "./routes/userRoute.js";
@@ -19,8 +19,14 @@ mongoose
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.log("DB Error:", err));
 
+const corsOptions = {
+  origin: ["http://localhost:1011", "https://your-frontend-domain.com"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // API Routes
