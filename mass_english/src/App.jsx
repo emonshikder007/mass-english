@@ -18,11 +18,8 @@ const App = () => {
     <>
       <Toaster position="top-center" reverseOrder={false} />
 
-      {/* Wrap everything inside the layout container */}
-      <div className="app-container">
-        {/* Show Header only on Home page */}
+      <div className="scale-wrapper">
         {isHomePage && <Navbar isLoggedIn={auth.isLoggedIn} />}
-
         <AnimatePresence mode="wait">
           <Outlet key={location.pathname} />
         </AnimatePresence>
