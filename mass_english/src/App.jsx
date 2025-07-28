@@ -5,7 +5,6 @@ import { Toaster } from "react-hot-toast";
 import Navbar from "./components/header/Header";
 import { AuthContext } from "./context/AuthContext";
 import { useContext } from "react";
-import "./App.css";
 
 const App = () => {
   const location = useLocation();
@@ -17,13 +16,13 @@ const App = () => {
   return (
     <>
       <Toaster position="top-center" reverseOrder={false} />
-
-      <div className="scale-wrapper">
-        {isHomePage && <Navbar isLoggedIn={auth.isLoggedIn} />}
-        <AnimatePresence mode="wait">
-          <Outlet key={location.pathname} />
-        </AnimatePresence>
-      </div>
+      
+      {/* Show Header only on Home page */}
+      {isHomePage && <Navbar isLoggedIn={auth.isLoggedIn} />}
+      
+      <AnimatePresence mode="wait">
+        <Outlet key={location.pathname} />
+      </AnimatePresence>
     </>
   );
 };
