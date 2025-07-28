@@ -37,7 +37,7 @@ const UploadVideo = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://mass-english-backend.onrender.com//api/admin/upload",
+        "https://mass-english-backend.onrender.com/api/admin/upload",
         formData,
         {
           headers: {
