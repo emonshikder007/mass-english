@@ -19,14 +19,14 @@ mongoose
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.log("DB Error:", err));
 
+// ✅ FIXED CORS
 const corsOptions = {
-  origin: ["https://mass-english.onrender.com/"],
+  origin: ["https://mass-english.onrender.com"], // ✅ no trailing slash
   credentials: true,
 };
-
 app.use(cors(corsOptions));
 
-// Middleware
+// ✅ FIXED JSON middleware
 app.use(express.json());
 
 // API Routes
