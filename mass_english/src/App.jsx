@@ -10,7 +10,7 @@ const App = () => {
   const location = useLocation();
   const { auth } = useContext(AuthContext);
 
-  // Check if current path is home
+
   const isHomePage = location.pathname === "/";
 
   return (
