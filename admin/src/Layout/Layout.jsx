@@ -9,7 +9,6 @@ const Layout = () => {
     <>
     <Toaster position="top-center" reverseOrder={false} />
       <div className="layout">
-        <Sidebar />
         <div className="main-content">
           <Header />
           <div className="page-content">
@@ -17,6 +16,7 @@ const Layout = () => {
           </div>
         </div>
       </div>
+        <Sidebar />
     </>
   );
 };
