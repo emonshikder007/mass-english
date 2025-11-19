@@ -11,7 +11,6 @@ const AdminAuthProvider = ({ children }) => {
 
   
 
-  // 🔁 Reload করলে login থেকে না যাই
   useEffect(() => {
     const token = localStorage.getItem("adminToken");
     if (token) {
@@ -25,7 +24,7 @@ const AdminAuthProvider = ({ children }) => {
 
   
 
-  // 🔐 Login
+
   const login = async (email, password) => {
     try {
       const res = await axios.post("https://mass-english-backend.onrender.com/api/admin/login", {
@@ -48,7 +47,7 @@ const AdminAuthProvider = ({ children }) => {
     }
   };
 
-  // 🚪 Logout
+//logout
   const logout = () => {
     localStorage.removeItem("adminToken");
     setAdmin({
