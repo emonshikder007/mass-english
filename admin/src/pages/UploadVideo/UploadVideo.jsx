@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
-import { AdminAuthContext } from "../../context/AdminAuthContext";
+import { AdminAuthContext } from "../../Context/AdminAuthContext";
 
 const UploadVideo = () => {
   const { token, admin } = useContext(AdminAuthContext);

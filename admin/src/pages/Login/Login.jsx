@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { AdminAuthContext } from "../../context/AdminAuthContext";
+import { AdminAuthContext } from "../../Context/AdminAuthContext";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
