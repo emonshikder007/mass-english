@@ -33,6 +33,7 @@ const Videos = () => {
         {
           headers: {
             authorization: "Bearer " + localStorage.getItem("adminToken"),
+            Accept: "application/json",
           },
         }
       );
