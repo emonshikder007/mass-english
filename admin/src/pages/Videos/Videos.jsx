@@ -25,7 +25,7 @@ const Videos = () => {
     if (!confirm) return;
 
     try {
-      const res = await axios.delete(`https://mass-english-backend.onrender.com/admin/video/${id}`, {
+      const res = await axios.delete(`https://mass-english-backend.onrender.com/api/admin/video/${id}`, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("adminToken"),
         },
