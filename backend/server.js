@@ -21,7 +21,7 @@ mongoose
 
 // ✅ FIXED CORS
 const corsOptions = {
-  origin: ["https://mass-english.onrender.com"], // ✅ no trailing slash
+  origin: ["https://mass-english.onrender.com", "https://mass-english-admin.onrender.com"], // ✅ no trailing slash
   credentials: true,
 };
 app.use(cors(corsOptions));
