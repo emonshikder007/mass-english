@@ -36,6 +36,7 @@ const Videos = () => {
       }
     } catch (err) {
       toast.error("Delete failed");
+      console.log(err);
     }
   };
 
