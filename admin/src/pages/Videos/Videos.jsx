@@ -7,11 +7,14 @@ const Videos = () => {
 
   const fetchVideos = async () => {
     try {
-      const res = await axios.get("https://mass-english-backend.onrender.com/api/admin/videos", {
-        headers: {
-          Authorization: "Bearer " + localStorage.getItem("adminToken"),
-        },
-      });
+      const res = await axios.get(
+        "https://mass-english-backend.onrender.com/api/admin/videos",
+        {
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("adminToken"),
+          },
+        }
+      );
       if (res.data.success) {
         setVideos(res.data.videos);
       }
@@ -25,11 +28,14 @@ const Videos = () => {
     if (!confirm) return;
 
     try {
-      const res = await axios.delete(`https://mass-english-backend.onrender.com/api/admin/video/${id}`, {
-        headers: {
-          Authorization: "Bearer " + localStorage.getItem("adminToken"),
-        },
-      });
+      const res = await axios.delete(
+        `https://mass-english-backend.onrender.com/api/admin/video/${id}`,
+        {
+          headers: {
+            authorization: "Bearer " + localStorage.getItem("adminToken"),
+          },
+        }
+      );
       if (res.data.success) {
         toast.success("Deleted!");
         setVideos(videos.filter((v) => v._id !== id));
