@@ -32,7 +32,7 @@ const UploadVideo = () => {
     const formData = new FormData();
     formData.append("title", form.title);
     formData.append("category", form.category);
-    formData.append("video", form.file);
+    formData.append("file", form.file);
 
     try {
       setLoading(true);
