@@ -21,7 +21,7 @@ mongoose
 
 //  FIXED CORS
 const corsOptions = {
-  origin: ["https://mass-english.onrender.com", "https://mass-english-admin.onrender.com"],
+  origin: ["https://mass-english.onrender.com", "https://mass-english-admin.onrender.com/upload", "https://mass-english-admin.onrender.com"],
   credentials: true,
 };
 app.use(cors(corsOptions));
