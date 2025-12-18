@@ -11,7 +11,7 @@ const router = express.Router();
 router.post("/login", loginAdmin);
 
 // ✅ Upload Video (protected by JWT token & multer file upload)
-router.post("/upload", isAdminAuthenticated, upload.single("video"), uploadVideo);
+router.post("/upload", isAdminAuthenticated, upload.single("file"), uploadVideo);
 
 // ✅ Get All Videos (public)
 router.get("/videos", getAllVideos);
