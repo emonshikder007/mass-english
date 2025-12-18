@@ -37,6 +37,7 @@ const AuthModal = ({ onClose }) => {
           <input
             type="text"
             placeholder="Name"
+            autoComplete="off"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
             required
@@ -44,6 +45,7 @@ const AuthModal = ({ onClose }) => {
         )}
         <input
           type="email"
+          autoComplete="off"
           placeholder="Email"
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -51,6 +53,7 @@ const AuthModal = ({ onClose }) => {
         />
         <input
           type="password"
+          autoComplete="off"
           placeholder="Password"
           value={form.password}
           onChange={(e) => setForm({ ...form, password: e.target.value })}
