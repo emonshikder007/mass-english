@@ -9,8 +9,6 @@ const AdminAuthProvider = ({ children }) => {
     token: null,
   });
 
-  
-
   useEffect(() => {
     const token = localStorage.getItem("adminToken");
     if (token) {
@@ -21,16 +19,15 @@ const AdminAuthProvider = ({ children }) => {
     }
   }, []);
 
-
-  
-
-
   const login = async (email, password) => {
     try {
-      const res = await axios.post("https://mass-english-backend.onrender.com/api/admin/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://mass-english-backend.onrender.com/api/admin/login",
+        {
+          email,
+          password,
+        }
+      );
 
       if (res.data.success) {
         localStorage.setItem("adminToken", res.data.token);
@@ -47,7 +44,7 @@ const AdminAuthProvider = ({ children }) => {
     }
   };
 
-//logout
+  //logout
   const logout = () => {
     localStorage.removeItem("adminToken");
     setAdmin({
@@ -57,7 +54,9 @@ const AdminAuthProvider = ({ children }) => {
   };
 
   return (
-    <AdminAuthContext.Provider value={{ admin, login, logout }}>
+    <AdminAuthContext.Provider
+      value={{ admin, token: admin.token, login, logout }}
+    >
       {children}
     </AdminAuthContext.Provider>
   );

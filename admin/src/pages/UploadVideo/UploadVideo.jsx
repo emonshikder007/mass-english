@@ -41,7 +41,7 @@ const UploadVideo = () => {
         formData,
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${admin.token}`,
             "Content-Type": "multipart/form-data",
           },
         }
