@@ -33,7 +33,7 @@ useEffect(() => {
   return (
     <>
       <div className="video-category-body">
-        <div class="overlay"></div>
+        <div className="overlay"></div>
         <div className="video-category-page">
           <h1 className="video-category-title">Choose a Video Category</h1>
           <div className="video-category-container">
