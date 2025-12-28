@@ -10,7 +10,7 @@ const createToken = (id) => {
   });
 };
 
-// ✅ Admin Login
+//  Admin Login
 export const loginAdmin = async (req, res) => {
   const { name, password } = req.body;
 
